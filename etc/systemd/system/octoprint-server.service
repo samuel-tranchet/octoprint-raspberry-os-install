@@ -1,0 +1,14 @@
+[Unit]
+Description=OctoPrint web interface for 3D printers
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Environment="LC_ALL=C.UTF-8"
+Environment="LANG=C.UTF-8"
+Type=exec
+User=pi
+ExecStart=/home/pi/OctoPrint/venv/bin/octoprint
+
+[Install]
+WantedBy=multi-user.target
