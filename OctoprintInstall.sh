@@ -2,7 +2,7 @@ cd ~
 sudo apt update
 sudo apt upgrade
 
-sudo apt install python3-pip python3-dev python3-setuptools python3-venv git libyaml-dev build-essential
+sudo apt install -y python3-pip python3-dev python3-setuptools python3-venv git libyaml-dev build-essential
 
 mkdir OctoPrint
 cd OctoPrint
@@ -22,7 +22,7 @@ sudo mv octoprint-server.service /etc/systemd/system/octoprint-server.service
 
 cd ~
 
-sudo apt install subversion libjpeg62-turbo-dev imagemagick ffmpeg libv4l-dev cmake
+sudo apt install -y subversion libjpeg62-turbo-dev imagemagick ffmpeg libv4l-dev cmake
 
 git clone https://github.com/jacksonliam/mjpg-streamer.git
 cd mjpg-streamer/mjpg-streamer-experimental
